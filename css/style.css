@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+    
+}
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+ /*===== Variable Define =====*/
+ :root {
+    --primary-color: #FFC222;
+    --secondry-color: #00a149;
+    --white-color: #fff;
+    --text-color: #b0b0b0;
+    --black-color: #1E1D23;
+    --primary-font: 'Roboto', sans-serif;
+    --secondry-font: 'Quicksand', sans-serif;
+  }
+  
+  a,
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--primary-color) !important;
+  }
+  
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+  }
+  
+  /*
+  =========================================
+      Custom Scrollbar
+  =========================================
+  */
+  
+  ::-webkit-scrollbar {
+    width: 0.425rem;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgb(184, 179, 179);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+  }
+  
+/*
+header part
+
+*/
+.navbar-brand
+{
+  margin-left: 20px;
+  background-color: white;
+  border-radius: 50%;
+  height: 5rem;
+  
+}
+.logo
+{
+  border-radius: 50%;
+  height: 75px;
+  width: 150px;
+  margin: 0px;
+  padding-right: 0px;
+ 
+}
+.navigation-wrap{
+  height: 80PX;
+  position:fixed;
+  width:100%;
+  left:0;
+  padding: 0px;
+  z-index:1000;
+  -webkit-transition:all 0.3s ease-out;
+  transition:all 0.3s ease-out;
+}
+.navigation-wrap .nav-item{
+  padding:0 0.625rem;
+  transition:all 0.3s linear;
+} 
+.navbar-toggler:focus,.navbar-toggler:hover{
+  outline: unset;
+  padding-top: 10px;
+  background-color: rgb(161, 85, 97);
+  border: unset;
+  box-shadow: none;
+}
+.nav-link{
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color:rgb(231, 225, 225);
+  letter-spacing:1px;
+}
+.nav-link:hover,
+.nav-link.active{
+  color:var(--primary-color) !important;
+}
+
+
+/*
+   top-banner Design
+
+*/
+#home
+{
+    width:100%; 
+    
+    padding-top: 80PX;
+    height: 630px;
+    z-index: -1;
+}
+.top-banner{
+    width:100%;
+    margin: 0px;
+    padding: 4rem 0 4rem;
+    background:url('../img/banner.jpg') no-repeat center ;
+    background-size: cover;
+    height: 100%;
+    
+  }
+  .top-banner .container{
+    height: 100%;
+  }
+
+.intro{
+  height: 300px;
+  
+  text-overflow: ellipsis;
+  
+}
+.intro h1{
+  color: #fff;
+  font-weight: 700;
+  padding: 1rem 0 1rem;
+  cursor: pointer;
+} 
+.intro p{
+  color: #fff;
+  font-size: 1rem;
+  
+  letter-spacing: 1px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: auto;
+}
+.register{
+      height: 3rem;
+      margin-bottom: 0px;
+      width: 100%;
+      padding: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      outline: none;
+      offset: none;
+      
+  }
+.register-btn
+{  
+    width: 9rem;
+    height: 2.5rem;
+    margin: auto;
+    border:none;
+    border-radius: 10px;
+    background-color: #adf7b6;
+    color: rgb(15, 15, 15);
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0px;
+    outline: none;
+    offset: none;
+    cursor: pointer;
+    }
+.register-btn:hover{
+  background-color: #50a85e;
+  color: azure;
+}
+
+/*
+
+speaker section Design
+
+*/
+
+
+.speakerhead
+{
+  font-weight: 900;
+  font-size: 3rem;
+  color: rgb(2, 49, 6);
+  line-height: 3rem;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+.main-card 
+{
+ margin:16px auto 16px;
+}
+.card{
+  width: 100%;
+  height: 100%;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+.card img{
+  height: 300px;
+}
+.card-body
+{
+  height: 15rem;
+  overflow: hidden;
+  text-overflow:ellipsis;
+ 
+}
+.card-title
+{
+  width: 100%;
+  height: 2.5rem;
+}
+.card-text{
+  padding: 10px;
+  width: 100%;
+  height: 11.5rem;
+  overflow: auto;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+
+
+/*
+
+venue section Design
+
+*/
+
+.venuehead
+{
+  text-transform: uppercase;
+  color: #1E1D23;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.venue-Dis{
+  text-align: justify;
+}
+
+
+
+
+
+
+/*
+
+schedule section Design
+
+*/
+
+.scheduleinnner1 {
+  height: 20rem;
+  background:url('../img/schedule1.jpg') no-repeat center ;
+  background-size: cover;
+  border-radius: 5px;
+}
+.scheduleinnner2 {
+  height: 20rem;
+  background:url('../img/schedule2.jpg') no-repeat center ;
+  background-size: cover;
+  border-radius: 5px;
+}
+.scheduleinnner3 {
+  height: 20rem;
+  background:url('../img/schedule3.jpg') no-repeat center ;
+  background-size: cover;
+  border-radius: 5px;
+}
+.scheduleinnner1 h2, .scheduleinnner2 h2, .scheduleinnner3 h2
+{
+  text-transform: uppercase;
+  color:rgb(234, 250, 16);
+  font-weight: 900;
+  padding: 10px;
+}
+.schedulefoot 
+{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10rem;
+  padding-left: 2%;
+}
+.schedulefoot h3
+{
+  text-transform: uppercase;
+  color: white;
+  font-size: 4rem;
+}
+.schedulefoot p
+{
+  color: rgb(248, 116, 8);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-top: px;
+  padding-left: 5px;
+  font-weight: 700;
+  text-transform: uppercase
+}
+
+
+/*
+
+footer section Design
+
+*/
+.footer{
+  background: var(--black-color);
+} 
+.footer .footer-social a i{
+  font-size: 1.5rem;
+  color:var(--white-color);
+  padding:0 1rem;
+}
+.footer .footer-social a:hover i{
+  color:var(--primary-color);
+}
+ 
+
+/* Form Control */
+.newsletter .form-control{
+  height:3.225rem;
+  padding:0 1.25rem;
+  font-size: 0.875rem;
+  width:50%;
+  border-radius: 0;
+  background:transparent;
+  border:0.1875rem solid var(--white-color);
+  color:var(--black-color);
+  font-weight: 700;
+}
+.newsletter .main-btn{
+  height:3.225rem;
+  padding:0 1.25rem;
+  font-size: 0.875rem;
+  border-radius: 0;
+  background-color: var(--white-color);
+  border:0.1875rem solid var(--white-color);
+  color:var(--black-color);
+  font-weight: 700;
+}
+.newsletter:hover .form-control{
+  border:0.1875rem solid var(--primary-color);
+  color:var(--white-color);
+}
+.newsletter:hover .main-btn{
+ background:var(--primary-color); 
+ border:0.1875rem solid var(--primary-color);
+}
+.newsletter .form-control:hover,
+.newsletter .form-control:focus{
+  outline:none;
+  box-shadow: none;
+  border-color:var(--primary-color);
+}
